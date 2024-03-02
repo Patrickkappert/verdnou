@@ -1,0 +1,43 @@
+# Copyright <YEAR(S)> <AUTHOR(S)>
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+
+{
+    "name": "Technical Pro QubiQ",
+    "summary": "All Technical pro modules",
+    "version": "17.0.1.0.0",
+    "category": "Pro",
+    "website": "https://www.qubiq.es",
+    "author": "QubiQ, Odoo Community Association (OCA)",
+    "license": "AGPL-3",
+    "application": False,
+    "installable": True,
+    "depends": [
+        "contacts",
+        "base_location_geonames_import",
+        "base_location",
+        "base_technical_features",
+        "base_user_role",
+        "date_range",
+        "document_url",
+        "l10n_es_toponyms",
+        "partner_contact_access_link",
+        "report_xlsx",
+        "report_xml",
+        "web_refresher",
+        "base_automation",
+        "bi_sql_editor",
+        "report_csv",
+        "base_user_role_history",
+        "base_technical_user",
+        "dbfilter_from_header",
+        "module_auto_update",
+        "server_action_mass_edit",
+        "web_m2x_options",
+        "web_remember_tree_column_width",
+        "web_responsive",
+        "web_search_with_and",
+        "web_tree_many2one_clickable",
+    ],
+    "data": [
+    ],
+}

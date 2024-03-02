@@ -1,0 +1,151 @@
+# # ============================================================================
+# # Add all OCA addons you need. Make sure you have added each repository in the "repos.yaml"
+
+account-analytic:
+    - "*"
+
+account-financial-reporting:
+    - "*"
+
+account-financial-tools:
+    - "*"
+
+account-invoice-reporting:
+    - "*"
+
+account-invoicing:
+    - "*"
+
+account-payment:
+    - "*"
+
+account-reconcile:
+    - "*"
+
+bank-payment:
+    - "*"
+
+bank-statement-import:
+    - "*"
+
+brand:
+    - "*"
+
+commission:
+    - "*"
+
+community-data-files:
+    - "*"
+
+credit-control:
+    - "*"
+
+crm:
+    - "*"
+
+currency:
+    - "*"
+
+e-commerce:
+    - "*"
+hr:
+    - "*"
+
+hr-attendance:
+    - "*"
+
+hr-holidays:
+    - "*"
+
+intrastat-extrastat:
+    - "*"
+
+knowledge:
+    - "*"
+
+l10n-spain:
+    - "*"
+
+maintenance:
+    - "*"
+
+manufacture:
+    - "*"
+
+# manufacture-reporting:
+#     - "*"
+
+margin-analysis:
+    - "*"
+
+#mis-builder:
+#    - "*"
+
+multi-company:
+    - "*"
+
+partner-contact:
+    - "*"
+
+product-attribute:
+    - "*"
+
+product-variant:
+    - "*"
+
+project:
+    - "*"
+
+purchase-reporting:
+    - "*"    
+
+purchase-workflow:
+    - "*"
+
+queue:
+    - "*"
+
+report-print-send:
+    - base_report_to_printer
+
+reporting-engine:
+    - "*"
+
+sale-reporting:
+    - "*"
+
+sale-workflow:
+    - "*"
+
+server-auth:
+    - "*"
+
+server-backend:
+    - "*"
+
+server-tools:
+    - "*"
+
+server-ux:
+    - "*"
+
+social:
+    - "*"
+
+stock-logistics-barcode:
+    - "*"
+
+stock-logistics-reporting:
+    - "*"
+
+stock-logistics-warehouse:
+    - "*"
+
+stock-logistics-workflow:
+    - "*"
+
+web:
+    - "*"
+
+website:
+    - "*"

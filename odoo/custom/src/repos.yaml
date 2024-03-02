@@ -1,0 +1,462 @@
+# Odoo is always required
+./odoo:
+    defaults:
+        # Shallow repositories ($DEPTH_DEFAULT=1) are faster & thinner
+        # You may need a bigger depth when merging PRs (use $DEPTH_MERGE
+        # for a sane value of 100 commits)
+        depth: 1
+    remotes:
+       # ocb: https://github.com/odoo/odoo.git
+        odoo: https://github.com/odoo/odoo.git
+       # openupgrade: https://github.com/OCA/OpenUpgrade.git
+    target:
+        odoo 17.0
+    merges:
+        - odoo 17.0
+        # Example of a merge of the PR with the number <PR>
+        # - oca refs/pull/<PR>/head
+
+# ============================================================================
+# Add all OCA repos you need
+
+
+./account-analytic:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/account-analytic
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./account-financial-reporting:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/account-financial-reporting
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./account-financial-tools:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/account-financial-tools
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./account-invoice-reporting:
+    defaults:
+       depth: 1
+    remotes:
+       oca: https://github.com/OCA/account-invoice-reporting
+    merges:
+       -  oca 17.0
+    target:  oca 17.0
+
+./account-invoicing:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/account-invoicing
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./account-payment:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/account-payment
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./account-reconcile:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/account-reconcile
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./bank-payment:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/bank-payment
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+    
+./bank-statement-import:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/bank-statement-import
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./brand:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/brand
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./commission:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/commission
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./community-data-files:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/community-data-files
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./credit-control:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/credit-control
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./crm:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/crm
+    merges:
+        -  oca 17.0
+    target:  oca 17.0    
+
+./currency:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/currency
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./e-commerce:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/e-commerce
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./hr:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/hr
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./hr-attendance:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/hr-attendance
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./hr-holidays:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/hr-holidays
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./knowledge:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/knowledge
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./l10n-spain:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/l10n-spain
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./maintenance:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/maintenance
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./manufacture:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/manufacture
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+# ./manufacture-reporting:
+#     defaults:
+#         depth: 1
+#     remotes:
+#         oca: https://github.com/OCA/manufacture-reporting
+#     merges:
+#         -  oca 17.0
+#     target:  oca 17.0
+
+./margin-analysis:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/margin-analysis
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+#./mis-builder:
+#    defaults:
+#        depth: 1
+#    remotes:
+#        oca: https://github.com/OCA/mis-builder
+#    merges:
+#        -  oca 17.0
+#    target:  oca 17.0
+
+./multi-company:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/multi-company
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./partner-contact:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/partner-contact
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./product-attribute:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/product-attribute
+    merges:
+        -  oca 17.0 
+    target:  oca 17.0
+
+# ./product-variant:
+#     defaults:
+#         depth: 1
+#     remotes:
+#         oca: https://github.com/OCA/product-variant
+#     merges:
+#         -  oca 17.0 
+#     target:  oca 17.0
+
+./project:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/project
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+# ./purchase-reporting:
+#      defaults:
+#          depth: 1
+#      remotes:
+#          oca: https://github.com/OCA/purchase-reporting
+#      merges:
+#          -  oca 17.0
+#      target:  oca 17.0
+
+./purchase-workflow:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/purchase-workflow
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./queue:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/queue.git
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./report-print-send:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/reporting-engine
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./reporting-engine:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/reporting-engine
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./sale-reporting:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/sale-reporting
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./sale-workflow:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/sale-workflow
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./server-auth:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/server-auth
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./server-backend:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/server-backend
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./server-tools:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/server-tools
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./server-ux:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/server-ux
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./social:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/social
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./stock-logistics-barcode:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/stock-logistics-barcode
+    merges:
+         -  oca 17.0
+    target:  oca 17.0
+
+./stock-logistics-reporting:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/stock-logistics-reporting
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./stock-logistics-warehouse:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/stock-logistics-warehouse
+    merges:
+         -  oca 17.0
+    target:  oca 17.0
+
+./stock-logistics-workflow:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/stock-logistics-workflow
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./web:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/web
+    merges:
+        -  oca 17.0
+    target:  oca 17.0
+
+./website:
+    defaults:
+        depth: 1
+    remotes:
+        oca: https://github.com/OCA/website
+    merges:
+        -  oca 17.0
+    target:  oca 17.0

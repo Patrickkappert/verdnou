@@ -1,0 +1,5 @@
+checksumdir
+unicodecsv
+unidecode
+google-auth
+odoo_test_helper
