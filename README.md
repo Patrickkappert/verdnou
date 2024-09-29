@@ -1,4 +1,3 @@
-# README  Imagen Base Contabilidad PRO QubiQ#
 
 
 

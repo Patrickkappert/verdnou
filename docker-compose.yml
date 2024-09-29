@@ -22,12 +22,14 @@ services:
             default:
             public:
         ports:
-            - "127.0.0.1:5432:5432"
+            - "127.0.0.1:5435:5432"
         environment:
             PORT: 5432
             TARGET: db
     postgres:
         image: postgres:16.1
+        environment:
+            POSTGRES_PASSWORD: postgres_password
 
     fonts_googleapis_proxy:
         image: tecnativa/whitelist
@@ -53,7 +55,7 @@ services:
                 COMPILE: "false"
         environment:
             ADMIN_PASSWORD: QubiQ_aa8864
-            PGDATABASE: verdnou
+            PGDATABASE: verdnouok
             PYTHONOPTIMIZE: ""
             SMTP_PORT: "1025"
             WITHOUT_DEMO: "true"
